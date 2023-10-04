@@ -1,0 +1,1 @@
+<?= "{$_SERVER['DOCUMENT_ROOT']}/BTTH03/index.html"; ?>
