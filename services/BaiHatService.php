@@ -17,7 +17,7 @@
                 $data = $stmt->fetchAll();
                 $baiHats = Array();
                 foreach($data as $row){
-                    $baiHats[] = new BaiHat($row["id"], $row["tenBaiHat"], $row["caSi"], $row['idTheLoai']);
+                    $baiHats[] = new BaiHat( $row["tenBaiHat"], $row["caSi"], $row['idTheLoai'], $row['id']);
                 }
                 return $baiHats;
             }catch(PDOException $e){
@@ -41,8 +41,8 @@
             $idTheLoai = $baiHat->getIdTheLoai();
             return MySql::Insert("INSERT INTO baihat(tenBaiHat, casi, idTheLoai) VALUES ('$tenBaiHat', '$caSi', '$idTheLoai')");
         }
-        public function DeleteBaiHat($baiHat){
-            return MySql::Delete("delete from baihat where id = '$baiHat->getId()'");
+        public function DeleteBaiHat($id){
+            return MySql::Delete("delete from baihat where id = '$id)'");
         }
     }
 ?>

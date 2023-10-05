@@ -8,11 +8,11 @@ error_reporting(E_ALL);
         private $caSi;
         private $idTheloai;
 
-        public function __construct($id, $tenBaiHat, $caSi, $idTheloai){
-            $this->id = $id;
+        public function __construct( $tenBaiHat, $caSi, $idTheloai, $id = null){
             $this->tenBaiHat = $tenBaiHat;
             $this->caSi = $caSi;
             $this->idTheloai = $idTheloai;
+            $this->id = $id;
         }
 
         public function getId(){

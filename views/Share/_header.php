@@ -6,9 +6,9 @@
             <li class="nav-item">
                 <a class="text-dark nav-link btn btn-light btn-trangChu" aria-current="page" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/BTTH03/public/index.php">Trang chủ</a>
             </li>
-            <!-- <li class="nav-item">
-                <a class="text-dark nav-link btn btn-light btn-dangNhap" href="../musiclife/login.php">Admin</a>
-            </li> -->
+            <li class="nav-item">
+                <a class="text-dark nav-link btn btn-light btn-dangNhap" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/BTTH03/public/index.php?action=theLoai">Quanr lí Thể Loại</a>
+            </li>
         </ul>
     </div>
     <div class="container-right">
